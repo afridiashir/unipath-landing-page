@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import { Montserrat, Geist } from "next/font/google";
+import { Bricolage_Grotesque, Manrope } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
+  variable: "--font-heading",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
@@ -22,8 +25,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("h-full", "antialiased", montserrat.variable, "font-sans", geist.variable)}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html
+      lang="en"
+      className={cn(
+        "h-full",
+        "antialiased",
+        bricolage.variable,
+        manrope.variable,
+      )}
+    >
+      <body className="min-h-full flex flex-col bg-[#F7F7F7] font-[family-name:var(--font-body)]">
+        {children}
+      </body>
     </html>
   );
 }

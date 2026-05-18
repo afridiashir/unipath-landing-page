@@ -15,31 +15,27 @@ const navLinks: NavItem[] = [
   {
     label: "Resources",
     href: "/resources",
-    // children: [
-    //   {
-    //     label: "Guides",
-    //     href: "/resources/guides",
-    //   },
-    //   {
-    //     label: "Scholarships",
-    //     href: "/resources/scholarships",
-    //   },
-    //   {
-    //     label: "Universities",
-    //     href: "/resources/universities",
-    //   },
-    //   {
-    //     label: "GPA Calculator",
-    //     href: "/resources/gpa-calculator",
-    //   },
-    //   {
-    //     label: "GPA Calculator",
-    //     href: "/resources/gpa-calculator",
-    //   },
-    // ],
+    children: [
+      {
+        label: "Guides",
+        href: "/resources/guides",
+      },
+      {
+        label: "Scholarships",
+        href: "/resources/scholarships",
+      },
+      {
+        label: "Universities",
+        href: "/resources/universities",
+      },
+      {
+        label: "GPA Calculator",
+        href: "/resources/gpa-calculator",
+      },
+    ],
   },
   {
-    label: "Enterprise",
+    label: "For Colleges",
     href: "/enterprise",
   },
   {
@@ -52,22 +48,25 @@ const Navbar = () => {
   return (
     <>
       {/* Mobile Navbar */}
-      <div className="absolute top-0 left-0 right-0 flex lg:hidden items-center justify-between px-4 h-[80px]">
+      <div className="absolute top-0 left-0 right-0 flex lg:hidden items-center justify-between px-8 h-[80px]">
         <div className="flex items-center gap-2">
-          <MobileMenu />
-          <Link href="/" className="text-2xl font-semibold text-primary">
+          <Link
+            href="/"
+            className="font-heading text-2xl font-semibold text-primary"
+          >
             UniPath
           </Link>
         </div>
-        <Button variant={"secondary"}>
-          Get Started <ArrowRight className="w-4 h-4" />
-        </Button>
+        <MobileMenu />
       </div>
 
       {/* Desktop Navbar */}
-      <div className="absolute top-0 left-0 right-0 hidden lg:flex items-center justify-between h-[80px] px-36 xl:px-56">
+      <div className="absolute top-0 left-0 right-0 hidden lg:flex items-center justify-between h-[80px] px-36 xl:px-64">
         <div className="flex items-center gap-16">
-          <Link href="/" className="text-2xl font-semibold text-primary">
+          <Link
+            href="/"
+            className="font-heading text-2xl font-semibold hover:text-primary"
+          >
             UniPath
           </Link>
 
@@ -78,19 +77,25 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-5">
-          <Link
-            href="#"
-            className="font-medium text-primary hover:text-primary/80 transition-colors"
-          >
-            Login
+        <div className="flex items-center gap-2 font-body">
+          <Link href="#">
+            <Button
+              variant={"outline"}
+              size="lg"
+              className="font-semibold cursor-pointer"
+            >
+              Login
+            </Button>
           </Link>
 
-          <Link
-            href="#"
-            className="bg-secondary flex items-center gap-2 hover:bg-secondary/90 px-6 py-2 rounded-full text-white font-medium transition-colors"
-          >
-            Get Started <ArrowRight className="w-4 h-4" />
+          <Link href="#">
+            <Button
+              variant={"secondary"}
+              size="lg"
+              className="font-semibold cursor-pointer"
+            >
+              Get Started <ArrowRight className="w-4 h-4" />
+            </Button>
           </Link>
         </div>
       </div>
@@ -120,11 +125,13 @@ const DesktopNavItem = ({
     <div className="relative group">
       <Link
         href={item.href}
-        className="flex items-center gap-1 px-3 py-2 text-primary font-medium hover:text-secondary transition-colors"
+        className="flex text-base items-center gap-1 px-3 py-2 font-medium hover:text-primary transition-colors"
       >
         {item.label}
 
-        {item.children && <ChevronDown className="w-4 h-4" />}
+        {item.children && (
+          <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-all duration-200" />
+        )}
       </Link>
 
       {/* Dropdown */}
@@ -134,7 +141,7 @@ const DesktopNavItem = ({
             <Link
               key={child.label}
               href={child.href}
-              className="block px-4 py-3 rounded-xl text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+              className="block font-body font-medium px-4 py-3 rounded-xl text-sm text-gray-700 hover:bg-gray-100 transition-colors"
             >
               {child.label}
             </Link>

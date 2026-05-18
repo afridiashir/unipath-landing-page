@@ -7,7 +7,7 @@
 :root {
   --primary: #1b1d6a;
   --secondary: #3c5cff;
-  --background: oklch(1 0 0);
+  --background: #F7F7F7;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -44,11 +44,32 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  --font-sans: var(--font-montserrat);
+
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-family: var(--font-body);
+}
 body {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-body);
+}
+
+.font-heading{
+  font-family: var(--font-heading);
+}
+.font-body{
+  font-family: var(--font-body);
 }
 
 @theme inline {
@@ -102,6 +123,6 @@ body {
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply font-body;
   }
 }

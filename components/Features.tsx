@@ -65,15 +65,15 @@ const Features = () => {
   );
 
   return (
-    <section className="py-12 bg-white px-4 md:px-20 xl:px-40 overflow-hidden">
+    <section className="py-12 mt-12  px-4 md:px-20 xl:px-40 overflow-hidden">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-bold text-primary mb-4">
-          Everything you need to get accepted
+          An Engine works on <br /> what actually works!
         </h2>
 
         <p className="text-lg text-gray-600 max-w-[600px] mx-auto">
-          Our platform provides comprehensive tools to streamline your entire
-          college application process.
+          We have helped thousands of students get accepted into their dream
+          colleges.
         </p>
       </div>
 
@@ -90,9 +90,9 @@ const Features = () => {
           {features.map((feature, index) => (
             <CarouselItem
               key={index}
-              className="pl-4 basis-full md:basis-1/2 lg:basis-1/4"
+              className="pl-4 basis-full md:basis-1/2 lg:basis-1/4 py-4"
             >
-              <div className="h-[350px] p-8 rounded-2xl bg-gray-50 border border-gray-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+              <div className="h-[350px] p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
                 <div className="w-24 h-24 text-primary">
                   <feature.icon className="w-16 h-16" />
                 </div>
