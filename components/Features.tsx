@@ -1,3 +1,7 @@
+"use client";
+
+import * as React from "react";
+import Autoplay from "embla-carousel-autoplay";
 import {
   BookOpen,
   Target,
@@ -6,6 +10,12 @@ import {
   Brain,
   FileCheck,
 } from "lucide-react";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
 const features = [
   {
@@ -47,36 +57,60 @@ const features = [
 ];
 
 const Features = () => {
+  const plugin = React.useRef(
+    Autoplay({
+      delay: 5000,
+      stopOnInteraction: false,
+    }),
+  );
+
   return (
-    <section className="py-12 bg-white px-4 md:px-20 xl:px-40">
+    <section className="py-12 bg-white px-4 md:px-20 xl:px-40 overflow-hidden">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-bold text-primary mb-4">
           Everything you need to get accepted
         </h2>
+
         <p className="text-lg text-gray-600 max-w-[600px] mx-auto">
           Our platform provides comprehensive tools to streamline your entire
           college application process.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg transition-shadow"
-          >
-            <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 text-secondary">
-              <feature.icon className="w-6 h-6" />
-            </div>
-            <h3 className="text-xl font-bold text-primary mb-3">
-              {feature.title}
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              {feature.description}
-            </p>
-          </div>
-        ))}
-      </div>
+      <Carousel
+        plugins={[plugin.current]}
+        opts={{
+          align: "start",
+          loop: true,
+          slidesToScroll: 1,
+        }}
+        className="w-full"
+      >
+        <CarouselContent className="-ml-4">
+          {features.map((feature, index) => (
+            <CarouselItem
+              key={index}
+              className="pl-4 basis-full md:basis-1/2 lg:basis-1/4"
+            >
+              <div className="h-[350px] p-8 rounded-2xl bg-gray-50 border border-gray-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+                <div className="w-24 h-24 text-primary">
+                  <feature.icon className="w-16 h-16" />
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-primary mb-3">
+                    {feature.title}
+                  </h3>
+
+                  <p className="h-16 text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </section>
   );
 };

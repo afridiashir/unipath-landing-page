@@ -55,7 +55,9 @@ const Navbar = () => {
       <div className="absolute top-0 left-0 right-0 flex lg:hidden items-center justify-between px-4 h-[80px]">
         <div className="flex items-center gap-2">
           <MobileMenu />
-          <p className="text-2xl font-semibold text-primary">UniPath</p>
+          <Link href="/" className="text-2xl font-semibold text-primary">
+            UniPath
+          </Link>
         </div>
         <Button variant={"secondary"}>
           Get Started <ArrowRight className="w-4 h-4" />
@@ -65,7 +67,9 @@ const Navbar = () => {
       {/* Desktop Navbar */}
       <div className="absolute top-0 left-0 right-0 hidden lg:flex items-center justify-between h-[80px] px-36 xl:px-56">
         <div className="flex items-center gap-16">
-          <p className="text-2xl font-semibold text-primary">UniPath</p>
+          <Link href="/" className="text-2xl font-semibold text-primary">
+            UniPath
+          </Link>
 
           <div className="flex items-center gap-2">
             {navLinks.map((item) => (

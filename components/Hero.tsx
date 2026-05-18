@@ -5,7 +5,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 const Hero = () => {
   return (
     <section className="overflow-visible">
-      <div className="min-h-screen flex items-center justify-center pt-24 flex-col px-4 md:px-20 xl:px-40 gap-6 bg-gradient-to-t from-yellow-50/40 to-white">
+      <div className="min-h-screen flex items-center justify-center pt-0 md:pt-24 flex-col px-4 md:px-20 xl:px-40 gap-6 bg-gradient-to-t from-yellow-50/40 to-white">
         <p className="flex items-center gap-2 text-sm text-black font-medium text-center border border-secondary/20 rounded-full px-8 py-2">
           <Sparkles className="w-4 h-4" />
           AI-powered college admissions
