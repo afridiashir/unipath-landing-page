@@ -11,7 +11,7 @@ const Hero = () => {
           AI-powered college admissions
         </p>
 
-        <h1 className="text-4xl md:text-6xl leading-[1.15] max-w-[800px] font-bold text-primary text-center">
+        <h1 className="text-3xl md:text-6xl leading-[1.15] max-w-[800px] font-bold text-primary text-center">
           Your{" "}
           <span className="bg-yellow-100 px-2 py-2 rounded-lg">
             personal guide
