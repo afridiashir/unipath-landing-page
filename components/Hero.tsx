@@ -51,7 +51,7 @@ const Hero = () => {
       </div>
 
       {/* Dashboard Image */}
-      <div className="flex mt-24 items-center justify-center  px-4 md:px-20 xl:px-40">
+      <div className="flex mt-24 mb-24 items-center justify-center  px-4 md:px-20 xl:px-40">
         <div className="border rounded-2xl overflow-hidden shadow-2xl max-w-[1000px]">
           <img
             src="/dashboard.png"
