@@ -10,26 +10,15 @@ const CTA = () => {
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
 
         <div className="relative z-10 max-w-[800px] mx-auto flex flex-col items-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Ready to start your journey?
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            Your Masters Application <br /> Deserves A Smarter Strategy
           </h2>
-          <p className="text-lg md:text-xl text-white/90 mb-10">
-            Join UniPath today and take the first step towards your dream
-            college. Sign up for free, no credit card required.
+          <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto">
+            UniPath helps Pakistani students apply abroad with more clarity, stronger applications, and better scholarship positioning.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <Button
-              size="lg"
-              className="bg-white text-secondary hover:bg-gray-100 px-8 py-6 text-lg rounded-full font-semibold"
-            >
-              Get Started for Free <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-white border-white hover:bg-white/90  px-8 py-6 text-lg rounded-full font-semibold bg-transparent"
-            >
-              Talk to Sales
+            <Button variant="secondary" size="lg" className="w-full sm:w-auto px-8 bg-white text-secondary hover:bg-gray-100 py-6 text-lg rounded-full font-semibold">
+              Check My Scholarship Chances <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>
         </div>

@@ -5,36 +5,28 @@ const footerLinks = [
   {
     title: "Product",
     links: [
-      { label: "Features", href: "#" },
-      { label: "Pricing", href: "#" },
-      { label: "Testimonials", href: "#" },
-      { label: "Case Studies", href: "#" },
+      { label: "Features", href: "#features" },
+      { label: "Scholarship Discovery", href: "#scholarships" },
+      { label: "SOP Feedback", href: "#sop-feedback" },
+      { label: "Application Tracker", href: "#tracking" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { label: "Blog", href: "#" },
-      { label: "Essay Guides", href: "#" },
-      { label: "College Matching", href: "#" },
-      { label: "Webinars", href: "#" },
+      { label: "Blog", href: "/blog" },
+      { label: "SOP Guides", href: "#" },
+      { label: "Scholarship Guides", href: "#" },
+      { label: "Masters Resources", href: "#" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "About Us", href: "#" },
-      { label: "Careers", href: "#" },
+      { label: "About", href: "#" },
       { label: "Contact", href: "#" },
-      { label: "Partners", href: "#" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
       { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
-      { label: "Cookie Policy", href: "#" },
+      { label: "Terms", href: "#" },
     ],
   },
 ];

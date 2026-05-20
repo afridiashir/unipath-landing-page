@@ -13,34 +13,20 @@ interface NavItem {
 
 const navLinks: NavItem[] = [
   {
+    label: "Features",
+    href: "#features",
+  },
+  {
+    label: "Scholarships",
+    href: "#scholarships",
+  },
+  {
     label: "Resources",
-    href: "/resources",
-    children: [
-      {
-        label: "Guides",
-        href: "/resources/guides",
-      },
-      {
-        label: "Scholarships",
-        href: "/resources/scholarships",
-      },
-      {
-        label: "Universities",
-        href: "/resources/universities",
-      },
-      {
-        label: "GPA Calculator",
-        href: "/resources/gpa-calculator",
-      },
-    ],
+    href: "#resources",
   },
   {
-    label: "For Colleges",
-    href: "/enterprise",
-  },
-  {
-    label: "Blog",
-    href: "/blog",
+    label: "FAQ",
+    href: "#faq",
   },
 ];
 
@@ -94,7 +80,7 @@ const Navbar = () => {
               size="lg"
               className="font-semibold cursor-pointer"
             >
-              Get Started <ArrowRight className="w-4 h-4" />
+              Get Started Free <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
         </div>
@@ -257,7 +243,7 @@ const MobileMenu = () => {
             href="#"
             className="w-full bg-secondary text-white py-3 rounded-full text-center font-medium"
           >
-            Get Started
+            Get Started Free
           </Link>
         </div>
       </div>

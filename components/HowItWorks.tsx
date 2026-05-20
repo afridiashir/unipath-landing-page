@@ -9,33 +9,21 @@ gsap.registerPlugin(ScrollTrigger);
 const steps = [
   {
     number: "01",
-    title: "Build Your Profile",
+    title: "Build Your Academic Profile",
     description:
-      "Input your academic stats, extracurriculars, and preferences to get personalized college recommendations.",
+      "Tell us about your academics, goals, budget, and preferred countries.",
   },
   {
     number: "02",
-    title: "Shortlist Colleges",
+    title: "Receive Personalized Guidance",
     description:
-      "Answer a few questions about your interests, grades, and goals. Our AI analyzes thousands of colleges to create your personalized shortlist.",
+      "Explore Masters programs, scholarship opportunities, and ways to improve your applications.",
   },
   {
     number: "03",
-    title: "Discover Scholarships",
+    title: "Apply With More Confidence",
     description:
-      "Find scholarships that match your profile and get notified when you're eligible to apply.",
-  },
-  {
-    number: "04",
-    title: "Write & Refine Applications",
-    description:
-      "Write compelling essays with AI assistance, get feedback from real counselors, and finalize your applications with confidence.",
-  },
-  {
-    number: "05",
-    title: "Get your dream college",
-    description:
-      "Send your applications, track your progress, and celebrate as you receive admission offers from your dream colleges.",
+      "Track deadlines, strengthen your SOPs, and make smarter application decisions.",
   },
 ];
 
@@ -83,7 +71,7 @@ const HowItWorks = () => {
       // Line fills as we progress
       tl.to(
         lineProgressRef.current,
-        { scaleX: 4.3, ease: "none", duration: totalSteps - 1 },
+        { scaleX: 2.2, ease: "none", duration: totalSteps - 1 },
         0,
       );
 
@@ -127,11 +115,9 @@ const HowItWorks = () => {
     >
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-bold mb-4">How it works</h2>
-        <p className="text-lg text-white/70 max-w-[600px] mx-auto">
-          A simple, step-by-step process to navigate the complex world of
-          college admissions.
-        </p>
+        <h2 className="text-3xl md:text-5xl font-bold mb-4">
+          How UniPath Works
+        </h2>
       </div>
 
       {/* Progress indicator */}

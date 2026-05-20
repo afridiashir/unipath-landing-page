@@ -3,12 +3,12 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import {
-  BookOpen,
-  Target,
-  Zap,
-  LayoutDashboard,
-  Brain,
-  FileCheck,
+  Search,
+  Award,
+  FileText,
+  CalendarCheck,
+  Mic,
+  TrendingUp,
 } from "lucide-react";
 
 import {
@@ -19,40 +19,40 @@ import {
 
 const features = [
   {
-    title: "AI Essay Review",
+    title: "Find Masters Programs That Match Your Profile",
     description:
-      "Get instant, actionable feedback on your personal statement and supplemental essays.",
-    icon: FileCheck,
+      "Get personalized university recommendations based on your academics, goals, budget, and preferred countries.",
+    icon: Search,
   },
   {
-    title: "Smart College Matching",
+    title: "Discover Scholarship Opportunities",
     description:
-      "Find your reach, match, and safety schools based on your unique profile and preferences.",
-    icon: Target,
+      "Find scholarships and financial support opportunities relevant to your profile and interests.",
+    icon: Award,
   },
   {
-    title: "Application Tracking",
+    title: "Improve Your SOP & Applications",
     description:
-      "Stay on top of deadlines and requirements for all your target universities in one place.",
-    icon: LayoutDashboard,
+      "Receive instant AI-powered feedback to strengthen your statement of purpose and application essays.",
+    icon: FileText,
   },
   {
-    title: "Extracurricular Strategy",
+    title: "Track Every Deadline In One Place",
     description:
-      "Optimize your activity list to highlight leadership, impact, and commitment.",
-    icon: Zap,
+      "Stay organized with application requirements, submissions, and deadlines across universities.",
+    icon: CalendarCheck,
   },
   {
-    title: "Interview Prep",
+    title: "Prepare For Admissions Interviews",
     description:
-      "Practice with AI-simulated interviews tailored to specific university questions.",
-    icon: Brain,
+      "Practice realistic interview questions tailored to Masters applications.",
+    icon: Mic,
   },
   {
-    title: "Resource Library",
+    title: "Build A Stronger Overall Profile",
     description:
-      "Access hundreds of successful essays and comprehensive guides for every step.",
-    icon: BookOpen,
+      "Get recommendations to improve your academic and extracurricular positioning.",
+    icon: TrendingUp,
   },
 ];
 
@@ -65,16 +65,11 @@ const Features = () => {
   );
 
   return (
-    <section className="py-12 mt-12  px-4 md:px-20 xl:px-40 overflow-hidden">
+    <section id="features" className="py-20 px-4 md:px-20 xl:px-40 overflow-hidden bg-white">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-bold text-primary mb-4">
-          An Engine works on <br /> what actually works!
+          Everything You Need To Build A Stronger Masters Application
         </h2>
-
-        <p className="text-lg text-gray-600 max-w-[600px] mx-auto">
-          We have helped thousands of students get accepted into their dream
-          colleges.
-        </p>
       </div>
 
       <Carousel
@@ -92,17 +87,17 @@ const Features = () => {
               key={index}
               className="pl-4 basis-full md:basis-1/2 lg:basis-1/4 py-4"
             >
-              <div className="h-[350px] p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
-                <div className="w-24 h-24 text-primary">
-                  <feature.icon className="w-16 h-16" />
+              <div className="h-[380px] p-8 rounded-2xl bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 hover:shadow-lg hover:border-secondary/30 transition-all duration-300 flex flex-col justify-between">
+                <div className="w-16 h-16 rounded-xl bg-primary/5 flex items-center justify-center text-secondary mb-6">
+                  <feature.icon className="w-8 h-8" />
                 </div>
 
-                <div>
+                <div className="flex-1">
                   <h3 className="text-xl font-bold text-primary mb-3">
                     {feature.title}
                   </h3>
 
-                  <p className="h-16 text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
