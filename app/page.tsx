@@ -11,12 +11,16 @@ import ProductPreview from "@/components/ProductPreview";
 import Comparison from "@/components/Comparison";
 import FreePlatform from "@/components/FreePlatform";
 import FAQ from "@/components/FAQ";
+import DarkNavbar from "@/components/DarkNavbar";
+import DarkHero from "@/components/DarkHero";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Hero />
+      {/* <Navbar /> */}
+      <DarkNavbar />
+      {/* <Hero /> */}
+      <DarkHero />
       {/* <PainPoints /> */}
       {/* <Features /> */}
       <ScholarshipPositioning />

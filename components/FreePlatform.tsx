@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const FreePlatform = () => {
   return (
-    <section className="py-24 px-4 md:px-20 xl:px-40 bg-secondary">
+    <section className="py-24 px-4 md:px-20 xl:px-40 bg-primary">
       <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
         <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
           High-Quality Admissions Guidance, Accessible To Everyone
