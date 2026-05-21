@@ -47,13 +47,13 @@ const ProductPreview = () => {
           ))}
         </div>
 
-        <div className="w-full max-w-5xl rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+        {/* <div className="w-full max-w-5xl rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
           <img 
             src="/dashboard.png" 
             alt="UniPath Platform Preview" 
             className="w-full object-cover"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

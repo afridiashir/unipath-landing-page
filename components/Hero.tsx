@@ -8,7 +8,7 @@ const Hero = () => {
       className="overflow-visible bg-no-repeat bg-center bg-cover"
       style={{ backgroundImage: "url('/background.png')" }}
     >
-      <div className="max-h-screen flex items-center justify-start pt-48 md:pt-48 flex-col px-4 md:px-20 xl:px-40 gap-4">
+      <div className="max-h-screen flex items-center justify-start pt-48 pb-48 md:pt-48 flex-col px-4 md:px-20 xl:px-40 gap-4">
         <p className="flex items-center gap-2 text-sm text-black font-medium text-center border border-secondary/20 rounded-full px-8 py-2 uppercase">
           Built for Pakistani students applying abroad for Masters programs
         </p>
@@ -51,7 +51,7 @@ const Hero = () => {
       </div>
 
       {/* Dashboard Image */}
-      <div className="flex mt-24 mb-24 items-center justify-center  px-4 md:px-20 xl:px-40">
+      {/* <div className="flex mt-24 mb-24 items-center justify-center  px-4 md:px-20 xl:px-40">
         <div className="border rounded-2xl overflow-hidden shadow-2xl max-w-[1000px]">
           <img
             src="/dashboard.png"
@@ -60,7 +60,7 @@ const Hero = () => {
             loading="eager"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

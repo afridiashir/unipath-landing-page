@@ -18,13 +18,13 @@ export default function Home() {
       <Navbar />
       <Hero />
       <PainPoints />
-      <Features />
+      {/* <Features /> */}
       <ScholarshipPositioning />
       <ProductPreview />
-      <Testimonials />
-      <Comparison />
       <HowItWorks />
+      {/* <Comparison /> */}
       <FreePlatform />
+      <Testimonials />
       <FAQ />
       <CTA />
       <Footer />
