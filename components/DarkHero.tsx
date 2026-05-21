@@ -5,7 +5,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 const DarkHero = () => {
   return (
     <section
-      className="overflow-visible bg-no-repeat bg-center bg-primary bg-cover"
+      className="overflow-visible bg-no-repeat bg-center bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 bg-cover"
       // style={{ backgroundImage: "url('/background.png')" }}
     >
       <div className="max-h-screen flex items-center justify-start pt-48  md:pt-48 flex-col px-4 md:px-20 xl:px-40 gap-4">
