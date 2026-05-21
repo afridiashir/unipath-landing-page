@@ -158,7 +158,7 @@ const MobileMenu = () => {
   return (
     <>
       <Menu
-        className="w-5 h-5 cursor-pointer text-primary"
+        className="w-5 h-5 cursor-pointer text-white"
         onClick={() => setIsOpen(true)}
       />
 
