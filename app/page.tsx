@@ -17,16 +17,16 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <PainPoints />
+      {/* <PainPoints /> */}
       {/* <Features /> */}
       <ScholarshipPositioning />
+      <CTA />
       <ProductPreview />
       <HowItWorks />
       {/* <Comparison /> */}
-      <FreePlatform />
       <Testimonials />
+      <FreePlatform />
       <FAQ />
-      <CTA />
       <Footer />
     </>
   );
