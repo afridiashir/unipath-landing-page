@@ -52,7 +52,7 @@ const DarkNavbar = () => {
         <div className="flex items-center gap-16">
           <Link
             href="/"
-            className="font-heading text-2xl font-semibold hover:text-primary text-white"
+            className="font-heading text-2xl font-semibold hover:text-gray-100 text-white"
           >
             UniPath
           </Link>
@@ -112,7 +112,7 @@ const DesktopNavItem = ({
     <div className="relative group">
       <Link
         href={item.href}
-        className="flex text-base text-white items-center gap-1 px-3 py-2 font-medium hover:text-primary transition-colors"
+        className="flex text-base text-white items-center gap-1 px-3 py-2 font-medium hover:text-text-gray-100 transition-colors"
       >
         {item.label}
 

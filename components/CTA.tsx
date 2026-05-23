@@ -17,7 +17,7 @@ const CTA = () => {
             UniPath helps Pakistani students apply abroad with more clarity, stronger applications, and better scholarship positioning.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <Button variant="default" size="lg" className="w-full sm:w-auto px-8 bg-white text-secondary hover:bg-gray-100 py-6 text-lg rounded-full font-semibold">
+            <Button variant="default" size="lg" className="w-full sm:w-auto px-8 bg-white text-secondary hover:bg-gray-100 py-6 text-base md:text-lg rounded-full font-semibold">
               Check My Scholarship Chances <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>
