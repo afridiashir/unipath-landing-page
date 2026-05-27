@@ -17,7 +17,7 @@ import DarkHero from "@/components/DarkHero";
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <DarkNavbar />
       {/* <Hero /> */}
       <DarkHero />

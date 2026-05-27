@@ -1,6 +1,7 @@
 import React from "react";
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "./ui/button";
+import UserJourney from "./UserJourney";
 
 const points = [
   "Identify better-fit Masters programs",
@@ -41,14 +42,7 @@ const ScholarshipPositioning = () => {
           </div>
         </div>
 
-        <div className="flex-1 w-full flex justify-center lg:justify-end relative">
-          <div className="absolute inset-0 bg-gradient-to-tr from-secondary/20 to-transparent rounded-full blur-3xl -z-10 w-[80%] h-[80%] m-auto" />
-          <img 
-            src="/dashboard.png" 
-            alt="Scholarship Dashboard" 
-            className="rounded-2xl border border-gray-200 shadow-2xl w-full max-w-lg object-cover"
-          />
-        </div>
+        <UserJourney />
       </div>
     </section>
   );
